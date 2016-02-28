@@ -5,6 +5,7 @@ from numpy import size
 import camb
 from camb import model, initialpower
 
+
 def H(H0, Omega_M, z): # returns the Hubble rate at redshift z (in units km/s/Mpc)
     return H0*sqrt(Omega_M*(1+z)**3 + (1-Omega_M) )
 
